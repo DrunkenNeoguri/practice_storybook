@@ -1,46 +1,43 @@
-# Getting Started with Create React App
+# Practice StoryBook
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+이 레포리토리는 컴포넌트 주도 개발론(CDD, Component Driven Development)과 관련해 많은 회사에서 사용하고 있는
+StoryBook이라는 툴을 학습하기 위해 만든 레포지토리입니다.
 
-## Available Scripts
+## StoryBook이란?
 
-In the project directory, you can run:
+공식 사이트에서는 ‘UI 컴포넌트 및 페이지 개별적으로 빌드하기 위한 프론트엔드 워크숍’이라고 자신을 설명하고 있습니다.
 
-### `npm start`
+StoryBook을 활용하면 각 페이지별로 컴포넌트들이 동작하는 방식이나 순서를 마치 책을 써내려가듯이 정리해볼 수 있고, 이를 통해 전체 빌드가 아닌 한 페이지 혹은 컴포넌트만을 빌드하여 빠르게 기능 테스트를 할 수 있다는 장점이 있습니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+StoryBook을 활용함으로서 빠른 컴포넌트 UI 디자인을 만들어 디자이너와 개발자 간의 협업을 도울 수 있으며, 필요에 따라 테스트 코드를 작성하여
+단위 테스트를 실행해 볼 수도 있습니다.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 설치 및 실행 방법
 
-### `npm test`
+StoryBook을 설치하고 싶다면 리액트가 설치된 환경에서 아래의 키워드를 입력해주십시오.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```jsx
+  npx sb init
+```
 
-### `npm run build`
+설치 후 StoryBook을 실행해보고 싶다면 아래의 키워드를 입력해주십시오.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```jsx
+  npm run storybook
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### stories 폴더 소개
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+StoryBook을 설치했다면 stories 폴더를 확인해봅시다.
+기본 설치에는 예제 파일이 몇 개 담겨져 있는데, 기본 사항이 될 'component'와 각 케이스들을 분류할 'story'이
+짝을 맞추고 있습니다.
 
-### `npm run eject`
+여기에 있는 파일들은 다른 경로에 있어도 되지만, story를 관리한다는 의미에서 적어도 story는 해당 폴더에서 관리하는 걸
+권장드립니다.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 학습 내용
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+각 학습 내용은 'src/stories' 내에 있는 파일들을 참고해 주십시오.
+학습 내용 및 파일들은 진행할 때마다 아래에 추가됩니다.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. 간단한 컴포넌트: (SimplePractice.tsx)[src\stories\SimplePractice.tsx], (SimplePractice.stories.tsx)[src\stories\SimplePractice.stories.tsx]
