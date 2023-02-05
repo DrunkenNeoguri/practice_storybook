@@ -40,4 +40,7 @@ StoryBook을 설치했다면 stories 폴더를 확인해봅시다.
 각 학습 내용은 'src/stories' 내에 있는 파일들을 참고해 주십시오.
 학습 내용 및 파일들은 진행할 때마다 아래에 추가됩니다.
 
-1. 간단한 컴포넌트: (SimplePractice.tsx)[src\stories\SimplePractice.tsx], (SimplePractice.stories.tsx)[src\stories\SimplePractice.stories.tsx]
+1. 간단한 컴포넌트
+
+- [컴포넌트 파일](src\stories\SimplePractice.tsx)
+- [스토리 파일](src\stories\SimplePractice.stories.tsx)
