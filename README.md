@@ -42,5 +42,5 @@ StoryBook을 설치했다면 stories 폴더를 확인해봅시다.
 
 1. 간단한 컴포넌트
 
-- [컴포넌트 파일](src\stories\SimplePractice.tsx)
-- [스토리 파일](src\stories\SimplePractice.stories.tsx)
+- [컴포넌트 파일](./src/stories/SimplePractice.tsx)
+- [스토리 파일](./src/stories/SimplePractice.stories.tsx)
